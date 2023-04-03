@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;900&display=swap");
 /* Color Theme Swatches in Hex */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto Slab", serif;
   margin: 0;
@@ -7,42 +11,47 @@ body {
   color: #723147;
 }
 
-.vertical-spacer-1 {
+a {
+  text-decoration: underline;
+  color: #b55475;
+}
+
+.ver-sp-1 {
   width: 100%;
   height: 25px;
 }
 
-.vertical-spacer-2 {
+.ver-sp-2 {
   width: 100%;
   height: 50px;
 }
 
-.vertical-spacer-3 {
+.ver-sp-3 {
   width: 100%;
   height: 75px;
 }
 
-.vertical-spacer-4 {
+.ver-sp-4 {
   width: 100%;
   height: 100px;
 }
 
-.vertical-spacer-5 {
+.ver-sp-5 {
   width: 100%;
   height: 125px;
 }
 
-.vertical-spacer-6 {
+.ver-sp-6 {
   width: 100%;
   height: 150px;
 }
 
-.vertical-spacer-7 {
+.ver-sp-7 {
   width: 100%;
   height: 175px;
 }
 
-.vertical-spacer-8 {
+.ver-sp-8 {
   width: 100%;
   height: 200px;
 }
@@ -87,6 +96,17 @@ body {
   width: 100%;
 }
 
+.separator {
+  margin: 0;
+  height: 25px;
+  border: none;
+  background: linear-gradient(0deg, #F9E4AD 20%, #E6B098 50%, #F9E4AD 80%);
+}
+
+.text-content, .sec-p, .section-subheading, .section-heading {
+  text-align: center;
+}
+
 .section-container {
   width: 100%;
   background-position: center;
@@ -95,7 +115,7 @@ body {
 }
 
 .section-content {
-  width: 60%;
+  padding: 10px;
   margin: 0 auto;
   background-color: #F9E4AD;
   padding: 10px;
@@ -104,10 +124,14 @@ body {
 .section-heading {
   font-size: 36px;
   margin: 0;
-  text-align: center;
 }
 
-.section-paragraph {
+.section-subheading {
+  font-size: 28px;
+  margin: 0;
+}
+
+.sec-p {
   font-size: 16px;
   font-weight: 500;
   margin: 0;
@@ -124,11 +148,129 @@ body {
   margin: 0 auto;
 }
 
+.screenshot {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.image-logo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.collage-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.collage-column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.collage img {
+  vertical-align: middle;
+  width: 80%;
+}
+
+.section-button {
+  background-color: #CC4452;
+  color: #F9E4AD;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 28px;
+  display: block;
+  width: 80%;
+  padding: 20px 0;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.section-button.animate {
+  transform: scale(1.2);
+}
+
+.section-button span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.section-button p {
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
 #section-welcome {
-  background-image: url("../src/imgs/profile-pic.jpg");
+  background-image: url("../src/imgs/profile-cover.png");
+}
+
+#section-welcome .section-heading {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+#section-escape {
+  background-image: url("../src/imgs/projects/escape/cover.png");
+}
+
+#section-blackout {
+  background-image: url("../src/imgs/projects/blackout/cover.png");
+}
+
+#section-dice {
+  background-color: #1CA5B8;
+}
+
+#section-return-stronger {
+  background-image: url("../src/imgs/projects/return-stronger/cover.jpg");
+}
+
+#section-proceeding-back {
+  background-image: url("../src/imgs/projects/proceeding-back/cover.png");
+}
+
+#section-space-sim {
+  background-image: url("../src/imgs/projects/space-sim/cover.png");
 }
 
 #profile-pic {
   width: 50%;
   max-width: 200px;
+}
+
+@media screen and (min-width: 720px) {
+  .section-content {
+    width: 60%;
+  }
+  .text-content, .section-heading, .section-subheading, .sec-p {
+    text-align: left;
+  }
+  .screenshot {
+    width: 80%;
+    max-width: 480px;
+  }
+  .image-logo {
+    width: 80%;
+    max-width: 600px;
+  }
+  .collage img {
+    display: block;
+    margin: 0 auto;
+    max-width: 450px;
+  }
+  .ignore-desktop {
+    display: none;
+  }
+  .section-button {
+    max-width: 256px;
+  }
 }/*# sourceMappingURL=style.css.map */
