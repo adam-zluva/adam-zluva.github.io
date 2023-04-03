@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;900&display=swap');
+
+/* Color Theme Swatches in Hex */
+$light-back: #F9E4AD;
+$dark-back: #E6B098;
+$accent: #CC4452;
+$light-fore: #723147;
+$dark-fore: #31152B;
+
+body
+{
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    background-color: $dark-back;
+    color: $light-fore;
+}
+
+@for $i from 1 through 8
+{
+    .vertical-spacer-#{$i}
+    {
+        width: 100%;
+        height: ($i * 25px);
+    }
+}
+
+@for $i from 1 through 10
+{
+    .wd-#{$i}
+    {
+        width: ($i * 10%);
+    }
+}
+
+.section-container
+{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-content
+{
+    width: 60%;
+    margin: 0 auto;
+    background-color: $light-back;
+    padding: 10px;
+}
+
+.section-heading
+{
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+}
+
+.section-paragraph
+{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.75;
+}
+
+.rounded-image
+{
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(0,0,0,.1);
+}
+
+.center-block
+{
+    display: block;
+    margin: 0 auto;
+}
+
+#section-welcome
+{
+    background-image: url("../src/imgs/profile-pic.jpg");
+}
+
+#profile-pic
+{
+    width: 50%;
+    max-width: 200px;
+}
