@@ -242,6 +242,14 @@ a {
   background-image: url("../src/imgs/projects/space-sim/cover.png");
 }
 
+#section-gameismouse {
+  background-color: #DD352A;
+}
+
+#section-cornfield {
+  background-color: #10211e;
+}
+
 #profile-pic {
   width: 50%;
   max-width: 200px;
