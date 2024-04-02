@@ -226,6 +226,10 @@ a {
   background-image: url("../src/imgs/projects/blackout/cover.png");
 }
 
+#section-overcycled {
+  background-color: #f5a66c;
+}
+
 #section-dice {
   background-color: #1CA5B8;
 }
