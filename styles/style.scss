@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;900&display=swap');
 
 /* Color Theme Swatches in Hex */
-$light-back: #F9E4AD;
-$dark-back: #E6B098;
+$bkg-color: #F9E4AD;
+$contrast-bkg: #E6B098;
 $accent: #CC4452;
 $light-fore: #723147;
 $dark-fore: #31152B;
+
+// $bkg-color: #a78a7f;
+// $contrast-bkg: #735751;
+// $accent: #bf4342;
+// $light-fore: #e7d7c1;
+// $dark-fore: #8c1c13;
 
 html
 {
@@ -16,14 +22,14 @@ body
 {
     font-family: 'Roboto Slab', serif;
     margin: 0;
-    background-color: $dark-back;
+    background-color: $contrast-bkg;
     color: $light-fore;
 }
 
 a
 {
     text-decoration: underline;
-    color: lighten($light-fore, 20%);
+    color: lighten($light-fore, 10%);
 }
 
 @for $i from 1 through 8
@@ -48,7 +54,7 @@ a
     margin: 0;
     height: 25px;
     border: none;
-    background: linear-gradient(0deg, $light-back 20%, $dark-back 50%, $light-back 80%);
+    background: linear-gradient(0deg, $bkg-color 20%, $contrast-bkg 50%, $bkg-color 80%);
 }
 
 .text-content
@@ -68,7 +74,7 @@ a
 {
     padding: 10px;
     margin: 0 auto;
-    background-color: $light-back;
+    background-color: $bkg-color;
     padding: 10px;
 }
 
@@ -143,7 +149,7 @@ a
 .section-button
 {
     background-color: $accent;
-    color: $light-back;
+    color: $bkg-color;
 
     text-decoration: none;
     font-weight: bold;
